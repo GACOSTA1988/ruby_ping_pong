@@ -24,3 +24,13 @@ describe('#number_equal_to_six') do
     expect(number_equal_to_six(6)).to(eq(["ping"]))
   end
 end
+describe('#ping_pong_counter') do
+  it('replaces any number divisible by 3 with a ping & replaces any number divisible by 5 with a pong') do
+    expect(ping_pong_counter(3)).to(eq([1,2,"ping"]))
+  end
+end
+describe('#ping_pong_counter') do
+  it('replaces any number divisible by 3 with a ping & replaces any number divisible by 5 with a pong') do
+    expect(ping_pong_counter(6)).to(eq([1,2,"ping",4,"pong","ping"]))
+  end
+end
